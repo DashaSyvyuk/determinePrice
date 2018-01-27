@@ -1,0 +1,136 @@
+html,body
+{
+    padding: 0;
+    margin: 0;
+}
+#content
+{
+    min-width: 1024px;
+    width: 100%;
+}
+header
+{
+    height: 100px;
+    background-color: #00b300;
+}
+header ul
+{
+    height: 30px;
+    padding-top: 50px;
+    list-style: none;
+}
+header ul li
+{
+    display: inline-block;
+    padding: 3px 15px;
+    background-color: #006400;
+}
+header ul li a
+{
+    color: #fff;
+    text-decoration: none;
+}
+#sideBar
+{
+    width: 25%;
+    min-height: 400px;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    float: left;
+}
+#sideBar .onePart
+{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    clear: both;
+}
+#sideBar .onePart label:hover
+{
+    cursor: pointer;
+}
+#sideBar .onePart input[type=text]
+{
+    width: 250px;
+    outline: none;
+    height: 25px;
+    margin-top: 5px;
+}
+#sideBar .onePart p
+{
+    line-height: 18px;
+    margin-top: 0;
+}
+#sideBar .onePart input[type=submit]
+{
+    width: 100px;
+    color: #fff;
+    background-color: #006400;
+    border: none;
+    padding: 4px 0;
+}
+#sideBar .onePart input[type=submit]:hover
+{
+    cursor: pointer;
+}
+#sideBar button
+{
+    color: #fff;
+    border: none;
+    background-color: #006400;
+    padding: 4px 15px;
+    margin-left: 40px;
+    outline: none;
+}
+#sideBar button:hover
+{
+    cursor: pointer;
+}
+#productsList
+{
+    padding: 20px 10px;
+    box-sizing: border-box;
+    width: 100%;
+}
+#productsList a
+{
+    width: 100%;
+    padding: 3px 5px;
+    box-sizing: border-box;
+    color: #000;
+    text-decoration: none;
+}
+#addProd
+{
+    display: none;
+}
+#addNewInterval
+{
+    display: none;
+}
+#priceTable
+{
+    width: 35%;
+    float: left;
+    padding: 10px;
+    box-sizing: border-box;
+    min-height: 400px;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+#determinePrice
+{
+    width: calc(40% - 2px);
+    float: left;
+    min-height: 400px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ccc;
+}
+#graphicsPlace
+{
+    width: 100%;
+    clear: both;
+    padding: 30px;
+    box-sizing: border-box;
+}

@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS `products` (`id` INT(3) AUTO_INCREMENT PRIMARY KEY,`prodName` VARCHAR(150),`defaultPrice` INT(6),`determinePrice` VARCHAR(20));
+CREATE TABLE IF NOT EXISTS `prices` (`id` INT(4) AUTO_INCREMENT PRIMARY KEY,`productID` INT(2),`startDate` DATE,`endDate` DATE,`Price` INT(6),`addTime` DATETIME,FOREIGN KEY (productID) REFERENCES products (id));
+INSERT INTO `products` (`prodName`, `defaultPrice`, `determinePrice`) VALUES ('Школьная форма', '10000', 'short_period');
+INSERT INTO `prices` (`productID`, `startDate`, `endDate`, `Price`, `addTime`) VALUES ('1', '2016-01-01', '0000-00-00', '8000', '2018-01-26 00:00:00');
+INSERT INTO `prices` (`productID`, `startDate`, `endDate`, `Price`, `addTime`) VALUES ('1', '2016-05-01', '2017-01-01', '12000', '2018-01-26 00:00:00');
+INSERT INTO `prices` (`productID`, `startDate`, `endDate`, `Price`, `addTime`) VALUES ('1', '2016-07-01', '2016-09-10', '15000', '2018-01-26 00:00:00');
+INSERT INTO `prices` (`productID`, `startDate`, `endDate`, `Price`, `addTime`) VALUES ('1', '2017-06-01', '2017-10-20', '20000', '2018-01-26 00:00:00');
+INSERT INTO `prices` (`productID`, `startDate`, `endDate`, `Price`, `addTime`) VALUES ('1', '2017-12-15', '2017-12-31', '5000', '2018-01-26 00:00:00');
